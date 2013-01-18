@@ -1,5 +1,6 @@
 # Copyright 2011 The Android Open Source Project
 
+ifeq ($(TARGET_BOARD_PLATFORM), msm7x27a)
 #AUDIO_POLICY_TEST := true
 #ENABLE_AUDIO_DUMP := true
 
@@ -100,3 +101,4 @@ LOCAL_MODULE_CLASS := ETC
 LOCAL_MODULE_PATH  := $(TARGET_OUT_ETC)
 LOCAL_SRC_FILES    := audio_policy.conf
 include $(BUILD_PREBUILT)
+endif
